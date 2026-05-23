@@ -1,0 +1,343 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+.content-section {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h2 {
+    color: #667eea;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.content-section h3 {
+    color: #764ba2;
+    margin: 25px 0 15px 0;
+    font-size: 1.4rem;
+}
+
+.content-section h4 {
+    color: #555;
+    margin: 20px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Math Content */
+.math-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.equation {
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid #667eea;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.math-content ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.math-content li {
+    margin-bottom: 10px;
+}
+
+/* Examples */
+.example {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 30px 0;
+}
+
+.example h3 {
+    color: #667eea;
+    margin-top: 0;
+}
+
+.example-problem {
+    background: #e8f4f8;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.example-solution {
+    margin-top: 20px;
+}
+
+/* Tables */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.result-table th,
+.result-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.result-table th {
+    background: #667eea;
+    color: white;
+    font-weight: 600;
+}
+
+.result-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.result-table tr:hover {
+    background: #e8f4f8;
+}
+
+/* Calculator Form */
+.calculator-form {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.btn-calculate {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+.btn-calculate:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-calculate:active {
+    transform: translateY(0);
+}
+
+/* Results */
+.results-container {
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 6px;
+    border: 2px solid #667eea;
+}
+
+.results-container h3 {
+    color: #667eea;
+    margin-top: 0;
+}
+
+.result-summary {
+    background: #e8f4f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.result-summary p {
+    margin: 10px 0;
+    font-size: 1.05rem;
+}
+
+.highlight {
+    color: #764ba2;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.convergence-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.convergence-info ul {
+    margin-left: 30px;
+    margin: 10px 0 10px 30px;
+}
+
+.convergence-info li {
+    margin: 5px 0;
+    font-family: 'Courier New', monospace;
+}
+
+/* Error Message */
+.error-message {
+    background: #ffe6e6;
+    color: #d32f2f;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d32f2f;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .result-table {
+        font-size: 0.85rem;
+    }
+
+    .result-table th,
+    .result-table td {
+        padding: 8px 10px;
+    }
+}
+
+/* Loading State */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: "Calculating...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-weight: 600;
+}
